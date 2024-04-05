@@ -31,6 +31,7 @@ function Home() {
         })
     }
     return(
+        <>
         <div className='grid grid-cols-4 px-8'>
             <div className='hidden md:block'>
                 <GenreList genreId={(genreId)=> getGameListByGenreId(genreId)}
@@ -47,6 +48,10 @@ function Home() {
                 : null}
             </div>
         </div>
+        <footer className='h-10 flex justify-center items-center'>
+        2024 - © Debmalya Saha - Powered by rawg.io
+      </footer>
+      </>
     )
 }
 export default Home;
